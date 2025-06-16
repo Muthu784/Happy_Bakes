@@ -1,0 +1,70 @@
+/* Register Page Styles */
+.register-container {
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #e91e63;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .register-container h2 {
+    color: #e91e63;
+    margin-bottom: 20px;
+  }
+  
+  .register-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .register-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e91e63;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .register-container input:focus {
+    outline: none;
+    border-color: #c2185b;
+  }
+  
+  .register-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-container button:hover {
+    background-color: #c2185b;
+  }
+  
+  .register-container .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .register-container .login-link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .register-container .login-link a {
+    color: #e91e63;
+    text-decoration: none;
+  }
+  
+  .register-container .login-link a:hover {
+    text-decoration: underline;
+  }
