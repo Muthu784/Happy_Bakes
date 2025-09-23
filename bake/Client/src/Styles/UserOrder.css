@@ -1,0 +1,115 @@
+/* UserOrders.css */
+.user-orders-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #e91e63;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.user-orders-container h1 {
+  color: #e91e63;
+  margin-bottom: 20px;
+}
+
+.ordered-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ordered-item {
+  background-color: #fff5f5;
+  border: 1px solid #e91e63;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+  position: relative; /* Added for delete button positioning */
+}
+
+.ordered-item h3 {
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.ordered-item p {
+  color: #333;
+  font-size: 16px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.small-button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.small-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.delete-button {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.order-summary {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Button group for alignment */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.order-now-button, .go-back-button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  min-width: 120px;
+}
+
+.go-back-button {
+  background-color: #dc3545;
+  
+}
+
+/* Order placed message with smooth fade effect */
+.order-placed-message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #4CAF50;
+  font-weight: bold;
+}
