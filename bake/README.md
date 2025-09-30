@@ -50,5 +50,5 @@ The project is organized into two main directories:
 
 ## Environment Variables
 
-Both client and server require specific environment variables to be set up. Please refer to the respective `.env.example` files for configuration details.
+Both client and server require specific environment variables to be set up. Please refer to the respective `.env.example` files for configuration information.
 
