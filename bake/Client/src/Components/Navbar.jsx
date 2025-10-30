@@ -1,21 +1,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { SunIcon , MoonIcon } from 'lucide-react';
 import { useUser } from '../context/UserContext';
+import { ThemeContext } from '../context/ThemeContext';
+import { useContext } from 'react';
 import '../Styles/Navbar.css';
 
 const Navbar = () => {
   const { user, logout } = useUser();
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const navigate = useNavigate();
   const location = useLocation();
-
-  // Check if we're on login or register page
   const isAuthPage = location.pathname === '/login' || location.pathname === '/register';
 
   const handleLogout = () => {
     logout();
     navigate('/');
   };
+
+  // Single icon for theme, click to toggle
+  const ThemeIcon = theme === 'light' 
+    ? <SunIcon onClick={toggleTheme} className="theme-icon" size={24} /> 
+    : <MoonIcon onClick={toggleTheme} className="theme-icon" size={24} />;
 
   return (
     <motion.nav
@@ -39,6 +46,10 @@ const Navbar = () => {
             </motion.div>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Link to="/products">Products</Link>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              {ThemeIcon}
             </motion.div>
           </>
         )}

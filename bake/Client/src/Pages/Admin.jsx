@@ -27,7 +27,7 @@ const Admin = () => {
         return;
       }
 
-      console.log('Fetching orders from:', 'http://localhost:5000/api/admin/orders'); // Debug log
+      // console.log('Fetching orders from:', 'http://localhost:5000/api/admin/orders'); // Debug log
       
       const response = await axios.get('http://localhost:5000/api/admin/orders', {
         withCredentials: true,

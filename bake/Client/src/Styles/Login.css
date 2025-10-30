@@ -71,3 +71,30 @@
 .signup-link a:hover {
   text-decoration: underline;
 }
+
+body.dark-theme .login-container {
+  background-color: #232638;
+  color: #fff;
+  border: 1px solid #e91e63;
+}
+body.dark-theme .login-container h2 {
+  color: #ffcccb;
+}
+body.dark-theme .form-group label {
+  color: #eee;
+}
+body.dark-theme .form-group input {
+  background: #30324a;
+  color: #fff;
+  border: 1px solid #e91e63;
+}
+body.dark-theme .login-button {
+  background-color: #e91e63;
+  color: #fff;
+}
+body.light-theme .login-container h2 {
+  color: #e91e63;
+}
+body.light-theme .form-group label {
+  color: #333;
+}

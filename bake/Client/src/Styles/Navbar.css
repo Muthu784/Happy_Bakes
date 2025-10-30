@@ -55,3 +55,26 @@
   background-color: white;
   color: #e91e63;
 }
+
+.theme-icon {
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+.theme-icon:active {
+  color: #ffcccb; /* Light pink on click */
+}
+
+body.light-theme .navbar {
+  background-color: #e91e63;
+}
+body.dark-theme .navbar-links a, body.dark-theme .navbar-logo a, body.dark-theme .user-welcome, body.dark-theme .logout-button {
+  color: #fff;
+}
+body.light-theme .navbar-links a, body.light-theme .navbar-logo a, body.light-theme .user-welcome, body.light-theme .logout-button {
+  color: #fff;
+}
+.theme-icon {
+  color: #fff;
+}

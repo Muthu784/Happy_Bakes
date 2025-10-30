@@ -10,13 +10,27 @@ body {
   background-color: #f5f5f5;
 }
 
+body.light-theme {
+  background-color: #f5f5f5;
+  color: #191919;
+}
+
+body.dark-theme {
+  background-color: #262938;
+  color: #f3f3f3;
+}
+
 .App {
   min-height: 100vh;
 }
 
+/* HEADINGS (Pink color stays fixed) */
 h1, h2, h3 {
-  color: #e91e63; /* Pink color for headings */
+  color: #e91e63;
   font-family: 'Pacifico', cursive;
+}
+body.dark-theme h1, body.dark-theme h2, body.dark-theme h3 {
+  color: #e91e63;
 }
 
 button {
@@ -249,4 +263,38 @@ input {
 
 .footer {
   margin-top: auto;
+}
+
+/* BUTTONS - Pink always, adapt only text for contrast */
+button, .cta-button {
+  background-color: #e91e63;
+  color: #fff;
+}
+
+/* INPUTS/FORMS - Pink border */
+input, .form-container {
+  border: 1px solid #e91e63;
+}
+body.dark-theme input, body.dark-theme .form-container {
+  background-color: #262938;
+  color: #f3f3f3;
+  border: 1px solid #e91e63;
+}
+body.light-theme input, body.light-theme .form-container {
+  background-color: #fff;
+  color: #191919;
+  border: 1px solid #e91e63;
+}
+
+/* CARDS - Borders stay pink, adjust background/text only for theme */
+.bakery-item-card {
+  border: 1px solid #e91e63;
+}
+body.dark-theme .bakery-item-card {
+  background-color: #222437;
+  color: #f3f3f3;
+}
+body.light-theme .bakery-item-card {
+  background-color: #fff;
+  color: #191919;
 }

@@ -161,3 +161,38 @@
   color: #888;
   font-size: 0.9rem;
 }
+
+/* Add theme styles for Home page */
+body.dark-theme .home-title,
+body.light-theme .home-title {
+  color: #e91e63;
+}
+body.dark-theme .specialty-card, body.light-theme .specialty-card {
+  color: #e91e63;
+  border: 1px solid #e91e63;
+}
+body.dark-theme .specialty-card:hover, body.light-theme .specialty-card:hover {
+  background-color: #e91e63;
+  color: white;
+}
+body.dark-theme .cta-button, body.light-theme .cta-button {
+  background-color: #e91e63;
+  color: #fff;
+}
+/* Only neutral/backgrounds/text adapt to theme */
+body.dark-theme .home-container {
+  background-color: black;
+  color: white;
+}
+body.light-theme .home-container {
+  background-color: white;
+  color: black;
+}
+body.dark-theme .about-section, body.dark-theme .specialties-section, body.dark-theme .product-section, body.dark-theme .testimonial-section {
+  background-color: black;
+  color: white;
+}
+body.light-theme .about-section, body.light-theme .specialties-section, body.light-theme .product-section {
+  background-color: white;
+  color: black;
+}

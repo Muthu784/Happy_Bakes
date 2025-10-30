@@ -43,6 +43,8 @@ const Home = () => {
     productSection.scrollIntoView({ behavior: 'smooth' });
   };
 
+  
+
   return (
     <div>
       <motion.div

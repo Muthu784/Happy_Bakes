@@ -13,6 +13,7 @@ import Register from './Pages/Register.jsx';
 import Admin from './Pages/Admin.jsx';
 import { UserProvider } from './context/UserContext';
 import ProtectedRoute from './Components/ProtectedRoute.jsx';
+import { ThemeProvider } from './context/ThemeContext';
 
 
 const AppContent = () => {
@@ -56,11 +57,13 @@ const AppContent = () => {
 
 function App() {
   return (
-    <UserProvider>
-      <BrowserRouter>
-        <AppContent />
-      </BrowserRouter>
-    </UserProvider>
+    <ThemeProvider>
+      <UserProvider>
+        <BrowserRouter>
+          <AppContent />
+        </BrowserRouter>
+      </UserProvider>
+    </ThemeProvider>
   );
 }
 
