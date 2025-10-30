@@ -2,13 +2,14 @@ const express = require('express');
 const router = express.Router();
 const Product = require('../models/Product');
 const uploadMiddleware = require('../Middleware/upload');
+const { configDotenv } = require('dotenv');
 const cloudinary = require('cloudinary').v2; // Import Cloudinary
 
 // Configure Cloudinary
 cloudinary.config({
-  cloud_name: '', // Replace with your Cloudinary cloud name
-  api_key: '',       // Replace with your Cloudinary API key
-  api_secret: ''   // Replace with your Cloudinary API secret
+  cloud_name: process.env.cloud_name, // Replace with your Cloudinary cloud name
+  api_key: process.env.api_key,       // Replace with your Cloudinary API key
+  api_secret: process.env.api_secret   // Replace with your Cloudinary API secret
 });
 
 // Create a new product

@@ -8,8 +8,9 @@ const cloudinary = require('cloudinary').v2;
 const cookieParser = require('cookie-parser');
 const ConnectDB = require('../Server/Config/db');
 const AuthRouter = require('../Server/routes/AuthRouter');
-const OrderRouter = require('../Server/routes/OrderRouter');
-const AdminRouter = require('../Server/routes/AdminRouter');
+const orderRoutes = require('../Server/routes/OrderRouter');
+const adminRoutes = require('../Server/routes/AdminRouter');
+
 const fs = require('fs');
 
 const app = express();
@@ -33,9 +34,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// Import routes
-const orderRoutes = require('../Server/routes/OrderRouter');
-const adminRoutes = require('../Server/routes/AdminRouter');
+
 
 // Routes
 app.use('/api/auth', AuthRouter);
