@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@vercel/static-build": "^2.8.4",
     "ajv-formats": "^3.0.1",
     "dotenv": "^16.5.0",
     "framer-motion": "^12.2.0",
