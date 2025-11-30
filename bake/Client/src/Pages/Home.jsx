@@ -134,11 +134,11 @@ const Home = () => {
         <h2>What Our Customers Say</h2>
         <div className="testimonial">
           <p>"Absolutely the best brownies I've ever had! My kids ask for Happy Bakes every weekend."</p>
-          <span>- Priya, Chennai</span>
+          <span>- Priya, Coimbatore</span>
         </div>
         <div className="testimonial">
           <p>"The birthday cake was stunning and delicious. Everyone loved it!"</p>
-          <span>- Rahul, Bangalore</span>
+          <span>- Rahul, Chennai</span>
         </div>
       </section>
 
