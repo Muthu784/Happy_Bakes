@@ -139,7 +139,10 @@ const UserOrders = () => {
       {orderedItems.length > 0 && (
         <div className="order-summary">
           <h3>Total Price: ₹{totalPrice.toFixed(2)}</h3>
-          <button className="order-now-button" onClick={handleOrderNow}>Order Now</button>
+          <div className="button-group">
+            <button className="order-now-button" onClick={() => navigate('/payment', { state: { totalAmount: totalPrice, orderItems: orderedItems } })}>Pay with Razorpay</button>
+            <button className="order-now-button order-now-button--alt" onClick={handleOrderNow}>Order Now (COD)</button>
+          </div>
         </div>
       )}
       {orderPlaced && <div className="order-placed-message">Your Order is Placed!</div>}

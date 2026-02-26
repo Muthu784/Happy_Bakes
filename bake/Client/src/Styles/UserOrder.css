@@ -101,9 +101,18 @@
   min-width: 120px;
 }
 
+.order-now-button--alt {
+  background-color: transparent;
+  color: #e91e63;
+  border: 2px solid #e91e63;
+}
+
+.order-now-button--alt:hover {
+  background-color: rgba(233, 30, 99, 0.1);
+}
+
 .go-back-button {
   background-color: #dc3545;
-  
 }
 
 /* Order placed message with smooth fade effect */

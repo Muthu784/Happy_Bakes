@@ -11,6 +11,7 @@ import VerifyOTP from './Pages/VerifyOTP.jsx';
 import ResetPassword from './Pages/ResetPassword.jsx';
 import Register from './Pages/Register.jsx';
 import Admin from './Pages/Admin.jsx';
+import Payment from './Pages/Payment.jsx';
 import { UserProvider } from './context/UserContext';
 import ProtectedRoute from './Components/ProtectedRoute.jsx';
 import { ThemeProvider } from './context/ThemeContext';
@@ -41,6 +42,11 @@ const AppContent = () => {
           <Route path="/userorder" element={
             <ProtectedRoute>
               <UserOrder />
+            </ProtectedRoute>
+          } />
+          <Route path="/payment" element={
+            <ProtectedRoute>
+              <Payment />
             </ProtectedRoute>
           } />
           <Route path="/Admin" element={
