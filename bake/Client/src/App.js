@@ -21,6 +21,7 @@ const AppContent = () => {
   const location = useLocation();
   const isAuthPage = ['/login', '/register', '/forgotpassword', '/verifyotp', '/resetpassword'].includes(location.pathname);
 
+  
   return (
     <>
       <Navbar />

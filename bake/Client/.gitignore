@@ -1,5 +1,9 @@
 # === GENERAL ===
 node_modules/
+client/node_modules/
+client/build/
+client/.env
+client/.DS_Store
 .env
 .env.local
 .DS_Store
