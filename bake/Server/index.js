@@ -10,6 +10,7 @@ const ConnectDB = require('../Server/Config/db');
 const AuthRouter = require('../Server/routes/AuthRouter');
 const orderRoutes = require('../Server/routes/OrderRouter');
 const adminRoutes = require('../Server/routes/AdminRouter');
+const paymentRoutes = require('../Server/routes/PaymentRouter');
 
 const fs = require('fs');
 
@@ -41,6 +42,7 @@ app.use('/api/auth', AuthRouter);
 app.use('/api/order', orderRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/products', require('../Server/routes/ProductRouter'));
+app.use('/api/payment', paymentRoutes);
 
 const Storage = multer.diskStorage({
   destination: (req, file, cb) => {

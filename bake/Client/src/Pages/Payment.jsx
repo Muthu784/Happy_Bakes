@@ -39,13 +39,6 @@ const Payment = () => {
   }, []);
 
   const openRazorpayCheckout = useCallback(async () => {
-    const keyId = process.env.REACT_APP_RAZORPAY_KEY_ID;
-    if (!keyId) {
-      setStatus('failed');
-      setMessage('Razorpay key not configured. Add REACT_APP_RAZORPAY_KEY_ID in .env');
-      return;
-    }
-
     setStatus('loading');
     setMessage('');
 
@@ -69,7 +62,7 @@ const Payment = () => {
       }
 
       const options = {
-        key: keyId,
+        key: data.key,
         order_id: data.orderId,
         amount: data.amount || amount,
         currency: data.currency || 'INR',
